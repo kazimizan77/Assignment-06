@@ -3,7 +3,7 @@ import cartIcon from "../assets/products/shopping-cart.png";
 function Navbar({ cartCount }) {
   return (
     <nav className="border-b border-gray-200 bg-white">
-      <div className="max-w-400 mx-auto h-23 px-4 md:px-6 flex items-center justify-between">
+      <div className="max-w-300 mx-auto h-23 px-4 md:px-6 flex items-center justify-between">
         <div>
           <h1 className="text-[28px] md:text-[32px] font-bold text-[#7C3AED]">
             DigiTools
@@ -20,7 +20,7 @@ function Navbar({ cartCount }) {
 
         <div className="flex items-center gap-4 md:gap-6">
           <div className="relative cursor-pointer">
-            <img src={cartIcon} alt="cart" className="w-5 h-5" />
+            <img src={cartIcon} alt="" className="w-5 h-5" />
 
             <span className="absolute -top-2 -right-2 min-w-4.5 h-4.5 rounded-full bg-[#7C3AED] text-white text-[10px] flex items-center justify-center px-1">
               {cartCount}
