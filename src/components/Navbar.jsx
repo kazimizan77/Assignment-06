@@ -2,7 +2,7 @@ import cartIcon from "../assets/products/shopping-cart.png";
 
 function Navbar({ cart }) {
   return (
-    <nav className="border-b border-gray-200 bg-white">
+   <nav className="sticky top-0 z-50 border-b border-gray-200 bg-white shadow-sm">
       <div className="max-w-300 mx-auto h-23 px-4 md:px-6 flex items-center justify-between">
         <div>
           <h1 className="text-[28px] md:text-[32px] font-bold text-[#7C3AED]">

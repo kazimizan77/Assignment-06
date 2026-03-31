@@ -1,3 +1,4 @@
+import { FcCheckmark } from "react-icons/fc";
 function ProductCard({ product, cart, handleAddToCart }) {
   const { name, description, price, period, tag, tagType, features, icon } =
     product;
@@ -45,7 +46,7 @@ function ProductCard({ product, cart, handleAddToCart }) {
             key={index}
             className="flex items-center gap-2 text-sm text-[#4B5563]"
           >
-            <span className="text-green-500">✓</span>
+            <FcCheckmark />
             <span>{feature}</span>
           </li>
         ))}

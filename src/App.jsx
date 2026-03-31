@@ -7,6 +7,7 @@ import productsData from "./data/products";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import StepsSection from "./components/StepsSection";
+import PricingSection from "./components/PricingSection";
 
 function App() {
   const [activeTab, setActiveTab] = useState("products");
@@ -59,6 +60,7 @@ function App() {
 
       <ToastContainer position="top-right" autoClose={2000} theme="colored" />
       <StepsSection />
+      <PricingSection />
     </div>
   );
 }
