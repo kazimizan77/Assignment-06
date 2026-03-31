@@ -16,7 +16,7 @@ function CartSection({ cart, handleRemoveFromCart, handleCheckout }) {
 
   return (
     <div className="bg-white border border-[#E5E7EB] rounded-3xl p-6 md:p-10">
-      <h3 className="text-3xl font-bold text-[#0F172A] mb-8">Your Cart</h3>
+      <h3 className="text-2xl font-bold text-[#101727FF] mb-6">Your Cart</h3>
 
       <div className="space-y-5">
         {cart.map((item) => (
@@ -30,16 +30,16 @@ function CartSection({ cart, handleRemoveFromCart, handleCheckout }) {
               </div>
 
               <div>
-                <h4 className="text-xl md:text-2xl font-semibold text-[#0F172A]">
+                <h4 className="text-xl md:text-2xl font-semibold text-[#101727FF]">
                   {item.name}
                 </h4>
-                <p className="text-[#6B7280] text-lg">${item.price}</p>
+                <p className="text-[#627382FF]">${item.price}</p>
               </div>
             </div>
 
             <button
               onClick={() => handleRemoveFromCart(item.id)}
-              className="text-pink-500 font-semibold hover:underline"
+              className="text-[#ff3980FF] font-semibold hover:underline"
             >
               Remove
             </button>
@@ -48,13 +48,13 @@ function CartSection({ cart, handleRemoveFromCart, handleCheckout }) {
       </div>
 
       <div className="flex items-center justify-between mt-8 mb-8">
-        <p className="text-[#6B7280] text-xl">Total:</p>
-        <h4 className="text-4xl font-bold text-[#0F172A]">${total}</h4>
+        <p className="text-[#627382FF] text-xl">Total:</p>
+        <h4 className="text-2xl font-bold text-[#101727FF]">${total}</h4>
       </div>
 
       <button
         onClick={handleCheckout}
-        className="w-full h-14 rounded-full bg-gradient-to-r from-[#5B34F2] to-[#B317F6] text-white text-lg font-semibold"
+        className="w-full h-14 rounded-full bg-gradient-to-r from-[#5B34F2] to-[#B317F6] text-white font-semibold"
       >
         Proceed To Checkout
       </button>

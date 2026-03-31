@@ -1,6 +1,6 @@
 import cartIcon from "../assets/products/shopping-cart.png";
 
-function Navbar({ cartCount }) {
+function Navbar({ cart }) {
   return (
     <nav className="border-b border-gray-200 bg-white">
       <div className="max-w-300 mx-auto h-23 px-4 md:px-6 flex items-center justify-between">
@@ -20,11 +20,13 @@ function Navbar({ cartCount }) {
 
         <div className="flex items-center gap-4 md:gap-6">
           <div className="relative cursor-pointer">
-            <img src={cartIcon} alt="" className="w-5 h-5" />
+            <img src={cartIcon} alt="Cart Icon" className="w-5 h-5" />
 
-            <span className="absolute -top-2 -right-2 min-w-4.5 h-4.5 rounded-full bg-[#7C3AED] text-white text-[10px] flex items-center justify-center px-1">
-              {cartCount}
-            </span>
+            {cart.length > 0 && (
+              <span className="absolute -top-2 -right-2 min-w-4.5 h-4.5 rounded-full bg-[#7C3AED] text-white text-[10px] flex items-center justify-center px-1">
+                {cart.length}
+              </span>
+            )}
           </div>
 
           <button className="text-[16px] text-[#374151] font-medium hover:text-[#7C3AED] cursor-pointer">
