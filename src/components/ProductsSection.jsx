@@ -56,6 +56,7 @@ function ProductsSection({
               <ProductCard
                 key={product.id}
                 product={product}
+                cart={cart}
                 handleAddToCart={handleAddToCart}
               />
             ))}

@@ -1,6 +1,8 @@
-function ProductCard({ product, handleAddToCart }) {
+function ProductCard({ product, cart, handleAddToCart }) {
   const { name, description, price, period, tag, tagType, features, icon } =
     product;
+
+  const isInCart = cart.some((item) => item.id === product.id);
 
   const tagStyles = {
     popular: "bg-[#EEF2FF] text-[#7C3AED]",
@@ -9,10 +11,10 @@ function ProductCard({ product, handleAddToCart }) {
   };
 
   return (
-    <div className="bg-white border border-[#E5E7EB] rounded-2xl p-5 md:p-6 shadow-sm hover:shadow-md transition min-h-[360px] flex flex-col">
+    <div className="bg-white border border-[#E5E7EB] rounded-2xl p-5 md:p-6 shadow-sm min-h-[360px] flex flex-col transition duration-300 hover:-translate-y-2 hover:shadow-xl">
       <div className="flex items-start justify-between mb-5">
         <div className="w-11 h-11 rounded-full bg-[#F8FAFC] border border-[#E5E7EB] flex items-center justify-center overflow-hidden">
-          <img src={icon} className="w-6 h-6 object-contain" />
+          <img src={icon} alt={name} className="w-6 h-6 object-contain" />
         </div>
 
         <span
@@ -24,22 +26,25 @@ function ProductCard({ product, handleAddToCart }) {
         </span>
       </div>
 
-      <h3 className="text-[26px] md:text-[24px] font-semibold text-[#0F172A] mb-4 leading-tight">
+      <h3 className="text-[26px] md:text-[30px] font-semibold text-[#0F172A] mb-3 leading-tight">
         {name}
       </h3>
 
-      <p className="text-[#6B7280] text-sm md:text-[16px] leading-6 mb-4 min-h-17.5">
+      <p className="text-[#6B7280] text-sm md:text-[15px] leading-6 mb-5 min-h-[70px]">
         {description}
       </p>
 
       <div className="mb-4">
-        <span className="text-[24px] font-bold text-[#0F172A]">${price}</span>
-        <span className="text-[#6B7280]">/{period}</span>
+        <span className="text-[30px] font-bold text-[#0F172A]">${price}</span>
+        <span className="text-[#6B7280] text-sm">/{period}</span>
       </div>
 
-      <ul className="space-y-2 mb-6 grow">
+      <ul className="space-y-2 mb-6 flex-grow">
         {features.map((feature, index) => (
-          <li key={index} className="flex items-center gap-2 text-[#4B5563]">
+          <li
+            key={index}
+            className="flex items-center gap-2 text-sm text-[#4B5563]"
+          >
             <span className="text-green-500">✓</span>
             <span>{feature}</span>
           </li>
@@ -48,9 +53,14 @@ function ProductCard({ product, handleAddToCart }) {
 
       <button
         onClick={() => handleAddToCart(product)}
-        className="w-full h-12 rounded-full bg-gradient-to-r from-[#5B34F2] to-[#B317F6] text-white font-semibold hover:opacity-95 transition"
+        disabled={isInCart}
+        className={`w-full h-12 rounded-full text-white font-semibold transition ${
+          isInCart
+            ? "bg-[#16A34A] cursor-not-allowed"
+            : "bg-gradient-to-r from-[#5B34F2] to-[#B317F6] hover:opacity-95 cursor-pointer"
+        }`}
       >
-        Buy Now
+        {isInCart ? "✓ Added to Cart!" : "Buy Now"}
       </button>
     </div>
   );
