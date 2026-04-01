@@ -1,9 +1,12 @@
-import writingIcon from "../assets/products/writing_2327400 1.png";
+import writingIcon from "../assets/products/writing.png";
 import designIcon from "../assets/products/design-tool.png";
 import stockIcon from "../assets/products/camera.png";
 import automationIcon from "../assets/products/operation.png";
 import resumeIcon from "../assets/products/portfolio.png";
 import socialIcon from "../assets/products/social-media.png";
+import aiImageIcon from "../assets/products/ai-image.png";
+import emailIcon from "../assets/products/email-ads.png";
+import websiteIcon from "../assets/products/website-builder.png";
 
 const products = [
   {
@@ -31,11 +34,7 @@ const products = [
     period: "One-Time",
     tag: "Popular",
     tagType: "popular",
-    features: [
-      "2000+ templates",
-      "Monthly updates",
-      "Commercial license",
-    ],
+    features: ["2000+ templates", "Monthly updates", "Commercial license"],
     icon: designIcon,
   },
   {
@@ -47,11 +46,7 @@ const products = [
     period: "Mo",
     tag: "New",
     tagType: "new",
-    features: [
-      "10M+ assets",
-      "Commercial use",
-      "No attribution",
-    ],
+    features: ["10M+ assets", "Commercial use", "No attribution"],
     icon: stockIcon,
   },
   {
@@ -63,11 +58,7 @@ const products = [
     period: "Mo",
     tag: "Popular",
     tagType: "popular",
-    features: [
-      "50+ automations",
-      "API access",
-      "Custom workflows",
-    ],
+    features: ["50+ automations", "API access", "Custom workflows"],
     icon: automationIcon,
   },
   {
@@ -79,11 +70,7 @@ const products = [
     period: "One-Time",
     tag: "New",
     tagType: "new",
-    features: [
-      "100+ templates",
-      "ATS optimization",
-      "Export to PDF",
-    ],
+    features: ["100+ templates", "ATS optimization", "Export to PDF"],
     icon: resumeIcon,
   },
   {
@@ -95,12 +82,52 @@ const products = [
     period: "Mo",
     tag: "Best Seller",
     tagType: "best-seller",
-    features: [
-      "5000+ assets",
-      "Scheduler included",
-      "Analytics dashboard",
-    ],
+    features: ["5000+ assets", "Scheduler included", "Analytics dashboard"],
     icon: socialIcon,
+  },
+  {
+    id: 7,
+    name: "AI Image Generator",
+    description:
+      "Create stunning images and artwork instantly using advanced AI image generation tools.",
+    price: 25,
+    period: "Mo",
+    tag: "New",
+    tagType: "new",
+    features: [
+      "Unlimited image generation",
+      "HD quality output",
+      "Multiple art styles",
+    ],
+    icon: aiImageIcon,
+  },
+  {
+    id: 8,
+    name: "Email Marketing Suite",
+    description:
+      "Build, automate, and track email campaigns to grow your audience and boost engagement.",
+    price: 59,
+    period: "Mo",
+    tag: "Popular",
+    tagType: "popular",
+    features: [
+      "Drag & drop builder",
+      "Automation workflows",
+      "Real-time analytics",
+    ],
+    icon: emailIcon,
+  },
+  {
+    id: 9,
+    name: "Website Builder Kit",
+    description:
+      "Easily create modern and responsive websites without coding using pre-built blocks.",
+    price: 99,
+    period: "One-Time",
+    tag: "Best Seller",
+    tagType: "best-seller",
+    features: ["100+ website blocks", "Responsive design", "SEO optimized"],
+    icon: websiteIcon,
   },
 ];
 
