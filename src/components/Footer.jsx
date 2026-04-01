@@ -7,17 +7,15 @@ function Footer() {
     <footer className="bg-[#101727FF] px-4 md:px-6 pt-[90px] md:pt-[120px] pb-[30px]">
       <div className="max-w-[1200px] mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-6 gap-10 md:gap-12 items-start">
-          <div className="xl:col-span-2">
-            <h2 className="text-white text-[32px] font-bold mb-4">DigiTools</h2>
-            <p
-              className="max-w-[320px] text-gray-400 leading-[1.6]"
-            >
+          <div className="xl:col-span-2 text-center md:text-left">
+            <h2 className="text-white text-[32px] font-bold mb-3">DigiTools</h2>
+            <p className="max-w-[320px] mx-auto md:mx-0 text-gray-400 leading-[1.6]">
               Premium digital tools for creators, professionals, and businesses.
               Work smarter with our suite of powerful tools.
             </p>
           </div>
 
-          <div>
+          <div className="text-center md:text-left">
             <h3 className="text-white text-[22px] font-semibold mb-4">
               Product
             </h3>
@@ -37,7 +35,7 @@ function Footer() {
             </ul>
           </div>
 
-          <div>
+          <div className="text-center md:text-left">
             <h3 className="text-white text-[22px] font-semibold mb-4">
               Company
             </h3>
@@ -57,7 +55,7 @@ function Footer() {
             </ul>
           </div>
 
-          <div>
+          <div className="text-center md:text-left">
             <h3 className="text-white text-[22px] font-semibold mb-4">
               Resources
             </h3>
@@ -81,7 +79,7 @@ function Footer() {
             <h3 className="text-white text-[22px] font-semibold mb-4">
               Social Links
             </h3>
-            <div className="flex items-center gap-3">
+            <div className="flex items-center justify-center md:justify-start gap-3">
               <a
                 href="#"
                 className="w-10 h-10 rounded-full bg-white text-[#07112A] flex items-center justify-center hover:scale-105 transition"
@@ -104,12 +102,12 @@ function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-white/10 mt-16 pt-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+        <div className="border-t border-white/10 mt-16 pt-6 flex flex-col items-center md:flex-row md:items-center justify-between gap-4 text-center md:text-left">
           <p className="text-gray-500">
             &copy; 2026 DigiTools. All rights reserved.
           </p>
 
-          <div className="flex flex-wrap items-center gap-6 text-gray-500">
+          <div className="flex flex-wrap justify-center md:justify-start items-center gap-6 text-gray-500">
             <a href="#" className="hover:text-white transition">
               Privacy Policy
             </a>

@@ -1,4 +1,5 @@
 import { FcCheckmark } from "react-icons/fc";
+
 function ProductCard({ product, cart, handleAddToCart }) {
   const { name, description, price, period, tag, tagType, features, icon } =
     product;
@@ -6,20 +7,20 @@ function ProductCard({ product, cart, handleAddToCart }) {
   const isInCart = cart.some((item) => item.id === product.id);
 
   const tagStyles = {
-    popular: "bg-[#EEF2FF] text-[#7C3AED]",
-    new: "bg-[#ECFDF3] text-[#16A34A]",
-    "best-seller": "bg-[#FFF7ED] text-[#F59E0B]",
+    popular: "bg-[#e1e7ffFF] text-[#7C3AED]",
+    new: "bg-[#dbfce7FF] text-[#0a883eFF]",
+    "best-seller": "bg-[#fef3c6FF] text-[#bb4d00FF]",
   };
 
   return (
-    <div className="bg-white border border-[#E5E7EB] rounded-2xl p-5 md:p-6 shadow-sm min-h-[360px] flex flex-col transition duration-300 hover:-translate-y-2 hover:shadow-xl">
-      <div className="flex items-start justify-between mb-5">
-        <div className="w-11 h-11 rounded-full bg-[#F8FAFC] border border-[#E5E7EB] flex items-center justify-center overflow-hidden">
-          <img src={icon} alt={name} className="w-6 h-6 object-contain" />
+    <div className="bg-white border border-[#f2f2f2FF] rounded-2xl p-5 md:p-6 shadow-sm min-h-[360px] flex flex-col transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+      <div className="flex items-start justify-between gap-3 mb-5">
+        <div className="w-10 h-10 md:w-11 md:h-11 lg:w-13 lg:h-13 rounded-full bg-white border border-[#f2f2f2FF] flex items-center justify-center overflow-hidden shrink-0">
+          <img src={icon} className="w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 object-contain" />
         </div>
 
         <span
-          className={`text-xs font-medium px-3 py-1 rounded-full ${
+          className={`text-[11px] md:text-sm font-medium px-2.5 md:px-3 py-1 rounded-full whitespace-nowrap ${
             tagStyles[tagType]
           }`}
         >
@@ -27,26 +28,28 @@ function ProductCard({ product, cart, handleAddToCart }) {
         </span>
       </div>
 
-      <h3 className="text-[26px] md:text-[30px] font-semibold text-[#0F172A] mb-3 leading-tight">
+      <h3 className="text-[22px] sm:text-[24px] md:text-[28px] font-bold text-[#101727FF] mb-4 leading-tight">
         {name}
       </h3>
 
-      <p className="text-[#6B7280] text-sm md:text-[15px] leading-6 mb-5 min-h-[70px]">
+      <p className="text-[#627382FF] text-[14px] md:text-[16px] leading-6 mb-1 min-h-auto md:min-h-[70px]">
         {description}
       </p>
 
       <div className="mb-4">
-        <span className="text-[30px] font-bold text-[#0F172A]">${price}</span>
-        <span className="text-[#6B7280] text-sm">/{period}</span>
+        <span className="text-[26px] md:text-[28px] font-bold text-[#101727FF]">
+          ${price}
+        </span>
+        <span className="text-[#627382FF]">/{period}</span>
       </div>
 
       <ul className="space-y-2 mb-6 flex-grow">
         {features.map((feature, index) => (
           <li
             key={index}
-            className="flex items-center gap-2 text-sm text-[#4B5563]"
+            className="flex items-center gap-2 sm: text-sm  text-[#627382FF]"
           >
-            <FcCheckmark />
+            <FcCheckmark className="shrink-0 h-5 w-5" />
             <span>{feature}</span>
           </li>
         ))}
@@ -55,7 +58,7 @@ function ProductCard({ product, cart, handleAddToCart }) {
       <button
         onClick={() => handleAddToCart(product)}
         disabled={isInCart}
-        className={`w-full h-12 rounded-full text-white font-semibold transition ${
+        className={`w-full h-11 md:h-12 rounded-full text-[14px] md:text-[16px] text-white font-semibold transition ${
           isInCart
             ? "bg-[#16A34A] cursor-not-allowed"
             : "bg-gradient-to-r from-[#5B34F2] to-[#B317F6] hover:opacity-95 cursor-pointer"
