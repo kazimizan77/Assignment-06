@@ -75,7 +75,7 @@ function Footer() {
             </ul>
           </div>
 
-          <div>
+          <div className="text-center md:text-left">
             <h3 className="text-white text-[22px] font-semibold mb-4">
               Social Links
             </h3>

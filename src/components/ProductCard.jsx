@@ -47,7 +47,7 @@ function ProductCard({ product, cart, handleAddToCart }) {
         {features.map((feature, index) => (
           <li
             key={index}
-            className="flex items-center gap-2 sm: text-sm  text-[#627382FF]"
+            className="flex items-center gap-2 sm:text-sm  text-[#627382FF]"
           >
             <FcCheckmark className="shrink-0 h-5 w-5" />
             <span>{feature}</span>
