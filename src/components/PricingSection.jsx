@@ -4,12 +4,12 @@ function PricingSection() {
   return (
     <section className="bg-[#F8F8F8] px-4 md:px-6 py-[100px] md:py-[120px]">
       <div className="max-w-[1200px] mx-auto">
-        <div className="text-center  mb-10 md:mb-10">
-          <h2 className="text-[34px] md:text-[46px] lg:text-[48px] leading-[1.08] font-bold text-[#101727FF] mb-4 max-w-[700px] mx-auto">
+        <div className="text-center mb-10 md:mb-14">
+          <h2 className="text-[34px] md:text-[46px] lg:text-[48px] leading-[1.08] font-bold text-[#101727] mb-4 max-w-[700px] mx-auto">
             Simple, Transparent Pricing
           </h2>
 
-          <p className="text-[#627382FF] text-sm md:text-[18px]">
+          <p className="text-[#627382] text-sm md:text-[18px] leading-[1.6]">
             Choose the plan that fits your needs. Upgrade or downgrade anytime.
           </p>
         </div>
@@ -23,32 +23,34 @@ function PricingSection() {
             <p className="text-[#627382] mb-6">Perfect for getting started</p>
 
             <div className="mb-6 flex items-end gap-1">
-              <span className="text-[24px] md:text-[40px] leading-none font-bold text-[#101727FF]">
+              <span className="text-[24px] md:text-[40px] leading-none font-bold text-[#101727]">
                 $0
               </span>
-              <span className="text-[#627382FF] text-[20px] mt-1">/Month</span>
+              <span className="text-[#627382] text-[16px] md:text-[18px] mb-[2px]">
+                /Month
+              </span>
             </div>
 
             <ul className="space-y-3 mb-8 text-[#627382] grow">
               <li className="flex items-start gap-2">
-                <FcCheckmark className="mt-[2px] shrink-0" />
+                <FcCheckmark className="mt-[3px] shrink-0" />
                 <span>Access to 10 free tools</span>
               </li>
               <li className="flex items-start gap-2">
-                <FcCheckmark className="mt-[2px] shrink-0" />
+                <FcCheckmark className="mt-[3px] shrink-0" />
                 <span>Basic templates</span>
               </li>
               <li className="flex items-start gap-2">
-                <FcCheckmark className="mt-[2px] shrink-0" />
+                <FcCheckmark className="mt-[3px] shrink-0" />
                 <span>Community support</span>
               </li>
               <li className="flex items-start gap-2">
-                <FcCheckmark className="mt-[2px] shrink-0" />
+                <FcCheckmark className="mt-[3px] shrink-0" />
                 <span>1 project per month</span>
               </li>
             </ul>
 
-            <button className="w-full h-[48px] rounded-full bg-gradient-to-r from-[#5B34F2] to-[#B317F6] text-white text-[15px] font-semibold transition-all duration-300 hover:scale-[1.02] cursor-pointer">
+            <button className="btn w-full h-12 min-h-12 rounded-full border-none text-white bg-gradient-to-r from-[#5B34F2] to-[#B317F6] hover:from-[#4E2DE0] hover:to-[#9F12E0] shadow-none">
               Get Started Free
             </button>
           </div>
@@ -68,37 +70,39 @@ function PricingSection() {
               <span className="text-[24px] md:text-[40px] leading-none font-bold text-white">
                 $29
               </span>
-              <span className="text-white text-[20px] mt-1">/Month</span>
+              <span className="text-white text-[16px] md:text-[18px] mb-[2px]">
+                /Month
+              </span>
             </div>
 
             <ul className="space-y-3 mb-8 text-white grow">
               <li className="flex items-start gap-2">
-                <FcCheckmark className="mt-[2px] shrink-0" />
+                <FcCheckmark className="mt-[3px] shrink-0" />
                 <span>Access to all premium tools</span>
               </li>
               <li className="flex items-start gap-2">
-                <FcCheckmark className="mt-[2px] shrink-0" />
+                <FcCheckmark className="mt-[3px] shrink-0" />
                 <span>Unlimited templates</span>
               </li>
               <li className="flex items-start gap-2">
-                <FcCheckmark className="mt-[2px] shrink-0" />
+                <FcCheckmark className="mt-[3px] shrink-0" />
                 <span>Priority support</span>
               </li>
               <li className="flex items-start gap-2">
-                <FcCheckmark className="mt-[2px] shrink-0" />
+                <FcCheckmark className="mt-[3px] shrink-0" />
                 <span>Unlimited projects</span>
               </li>
               <li className="flex items-start gap-2">
-                <FcCheckmark className="mt-[2px] shrink-0" />
+                <FcCheckmark className="mt-[3px] shrink-0" />
                 <span>Cloud sync</span>
               </li>
               <li className="flex items-start gap-2">
-                <FcCheckmark className="mt-[2px] shrink-0" />
+                <FcCheckmark className="mt-[3px] shrink-0" />
                 <span>Advanced analytics</span>
               </li>
             </ul>
 
-            <button className="w-full h-[48px] rounded-full bg-white text-[#5B34F2] text-[15px] font-semibold transition-all duration-300 hover:scale-[1.02] cursor-pointer">
+            <button className="btn w-full h-12 min-h-12 rounded-full bg-white text-[#5B34F2] border-none hover:bg-gray-100 shadow-none">
               Start Pro Trial
             </button>
           </div>
@@ -111,40 +115,42 @@ function PricingSection() {
             <p className="text-[#627382] mb-6">For teams and businesses</p>
 
             <div className="mb-6 flex items-end gap-1">
-              <span className="text-[24px] md:text-[40px] leading-none font-bold text-[#101727FF]">
+              <span className="text-[24px] md:text-[40px] leading-none font-bold text-[#101727]">
                 $99
               </span>
-              <span className="text-[#627382FF] text-[20px] mt-1">/Month</span>
+              <span className="text-[#627382] text-[16px] md:text-[18px] mb-[2px]">
+                /Month
+              </span>
             </div>
 
             <ul className="space-y-3 mb-8 text-[#627382] grow">
               <li className="flex items-start gap-2">
-                <FcCheckmark className="mt-[2px] shrink-0" />
+                <FcCheckmark className="mt-[3px] shrink-0" />
                 <span>Everything in Pro</span>
               </li>
               <li className="flex items-start gap-2">
-                <FcCheckmark className="mt-[2px] shrink-0" />
+                <FcCheckmark className="mt-[3px] shrink-0" />
                 <span>Team collaboration</span>
               </li>
               <li className="flex items-start gap-2">
-                <FcCheckmark className="mt-[2px] shrink-0" />
+                <FcCheckmark className="mt-[3px] shrink-0" />
                 <span>Custom integrations</span>
               </li>
               <li className="flex items-start gap-2">
-                <FcCheckmark className="mt-[2px] shrink-0" />
+                <FcCheckmark className="mt-[3px] shrink-0" />
                 <span>Dedicated support</span>
               </li>
               <li className="flex items-start gap-2">
-                <FcCheckmark className="mt-[2px] shrink-0" />
+                <FcCheckmark className="mt-[3px] shrink-0" />
                 <span>SLA guarantee</span>
               </li>
               <li className="flex items-start gap-2">
-                <FcCheckmark className="mt-[2px] shrink-0" />
+                <FcCheckmark className="mt-[3px] shrink-0" />
                 <span>Custom branding</span>
               </li>
             </ul>
 
-            <button className="w-full h-[48px] rounded-full bg-gradient-to-r from-[#5B34F2] to-[#B317F6] text-white text-[15px] font-semibold transition-all duration-300 hover:scale-[1.02] cursor-pointer">
+            <button className="btn w-full h-12 min-h-12 rounded-full border-none text-white bg-gradient-to-r from-[#5B34F2] to-[#B317F6] hover:from-[#4E2DE0] hover:to-[#9F12E0] shadow-none">
               Contact Sales
             </button>
           </div>

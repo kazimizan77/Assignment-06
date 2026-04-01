@@ -8,7 +8,7 @@ function Banner() {
       <div className="max-w-[1280px] mx-auto px-4 md:px-8 lg:px-12 py-12 md:py-20">
         <div className="flex flex-col-reverse lg:flex-row items-center gap-10 lg:gap-16">
           <div className="flex-1 text-center lg:text-left">
-            <div className="inline-flex items-center gap-1.5 bg-[#e1e7ffFF] text-[#7C3AED] font-medium px-4 py-2 rounded-full mb-6">
+            <div className="inline-flex items-center gap-1.5 bg-[#e1e7ff] text-[#7C3AED] font-medium px-4 py-2 rounded-full mb-6">
               <img src={bannerBadge} className="w-4 h-4" />
               New: AI-Powered Tools Available
             </div>
@@ -17,7 +17,7 @@ function Banner() {
               Supercharge Your Digital Workflow
             </h1>
 
-            <p className="text-[14px] sm:text-[14px] md:text-[16px] leading-6 md:leading-7 text-[#627382FF] max-w-[520px] mx-auto lg:mx-0 mb-8">
+            <p className="text-[14px] sm:text-[14px] md:text-[16px] leading-6 md:leading-7 text-[#627382] max-w-[520px] mx-auto lg:mx-0 mb-8">
               Access premium AI tools, design assets, templates, and
               productivity
               <br />
@@ -27,11 +27,11 @@ function Banner() {
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
-              <button className="h-12 sm:h-11 px-5 rounded-full bg-gradient-to-r from-[#6C3BFF] to-[#A729F5] text-white text-[14px] sm:text-[16px] font-semibold cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-300/50">
+              <button className="btn h-12 sm:h-11 min-h-0 px-5 rounded-full border-none text-white bg-gradient-to-r from-[#6C3BFF] to-[#A729F5] text-[14px] sm:text-[16px] font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-300/50">
                 Explore Products
               </button>
 
-              <button className="h-12 sm:h-11 px-5 rounded-full border border-[#7C3AED] text-[#7C3AED] text-[14px] sm:text-[16px] font-semibold flex items-center gap-2 cursor-pointer transition-all duration-300 hover:bg-[#7C3AED] hover:text-white">
+              <button className="btn h-12 sm:h-11 min-h-0 px-5 rounded-full border border-[#7C3AED] bg-transparent text-[#7C3AED] text-[14px] sm:text-[16px] font-semibold flex items-center gap-2 transition-all duration-300 hover:bg-[#7C3AED] hover:text-white">
                 <img src={playIcon} className="w-4 h-4" />
                 Watch Demo
               </button>

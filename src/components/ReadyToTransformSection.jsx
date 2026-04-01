@@ -13,11 +13,11 @@ function ReadyToTransformSection() {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center gap-4 mb-5">
-            <button className="h-14 px-7 rounded-full bg-white text-[#5B34F2] text-[16px] font-semibold transition-all duration-300 hover:scale-[1.02] hover:shadow-lg cursor-pointer">
+            <button className="btn h-14 min-h-0 px-7 rounded-full border-none bg-white text-[#5B34F2] text-[16px] font-semibold transition-all duration-300 hover:scale-[1.02] hover:shadow-lg">
               Explore Products
             </button>
 
-            <button className="h-14 px-9 rounded-full border border-white text-white text-[16px] font-semibold transition-all duration-300 hover:bg-white hover:text-[#5B34F2] hover:scale-[1.02] cursor-pointer">
+            <button className="btn h-14 min-h-0 px-9 rounded-full border border-white bg-transparent text-white text-[16px] font-semibold transition-all duration-300 hover:bg-white hover:text-[#5B34F2] hover:scale-[1.02]">
               View Pricing
             </button>
           </div>
