@@ -107,17 +107,17 @@ function Footer() {
             &copy; 2026 DigiTools. All rights reserved.
           </p>
 
-          <div className="flex flex-wrap justify-center md:justify-start items-center gap-6 text-gray-500">
-            <a href="#" className="hover:text-white transition">
+          <ul className="flex flex-wrap justify-center md:justify-start items-center gap-6 text-gray-500">
+            <li className="hover:text-white transition cursor-pointer">
               Privacy Policy
-            </a>
-            <a href="#" className="hover:text-white transition">
+            </li>
+            <li className="hover:text-white transition cursor-pointer">
               Terms of Service
-            </a>
-            <a href="#" className="hover:text-white transition">
+            </li>
+            <li className="hover:text-white transition cursor-pointer">
               Cookies
-            </a>
-          </div>
+            </li>
+          </ul>
         </div>
       </div>
     </footer>

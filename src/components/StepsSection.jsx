@@ -25,7 +25,6 @@ function StepsSection() {
             <div className="w-[100px] h-[100px] mx-auto mt-8 mb-6 rounded-full bg-[#F3E8FF] flex items-center justify-center">
               <img
                 src={userIcon}
-                alt="Create account icon"
                 className="w-[60px] h-[60px] object-contain"
               />
             </div>
@@ -48,7 +47,6 @@ function StepsSection() {
             <div className="w-[100px] h-[100px] mx-auto mt-8 mb-6 rounded-full bg-[#F3E8FF] flex items-center justify-center">
               <img
                 src={packageIcon}
-                alt="Choose products icon"
                 className="w-[60px] h-[60px] object-contain"
               />
             </div>
@@ -70,7 +68,6 @@ function StepsSection() {
             <div className="w-[100px] h-[100px] mx-auto mt-8 mb-6 rounded-full bg-[#F3E8FF] flex items-center justify-center">
               <img
                 src={rocketIcon}
-                alt="Start creating icon"
                 className="w-[60px] h-[60px] object-contain"
               />
             </div>
